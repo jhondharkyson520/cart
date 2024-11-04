@@ -1,12 +1,12 @@
-import { BsCartPlus } from 'react-icons/bs'
-import { useEffect, useState, useContext } from 'react'
-import { api } from '../../services/api'
-import { CartContext } from '../../contexts/CartContext'
-import toast from 'react-hot-toast'
-import { Link } from 'react-router-dom'
+import {BsCartPlus} from 'react-icons/bs';
+import {useEffect, useState, useContext} from 'react';
+import {api} from '../../services/api';
+import {CartContext} from '../../contexts/CartContext';
+import toast from 'react-hot-toast';
+import {Link} from 'react-router-dom';
 
 
-export interface ProductsProps{
+export interface ProductsProps {
     id: number;
     title: string;
     description: string;
@@ -15,10 +15,9 @@ export interface ProductsProps{
 }
 
 
-export function Home(){
-
+export function Home() {
     const [products, setProducts] = useState<ProductsProps[]>([]);
-    const { addItemCart } = useContext(CartContext);
+    const {addItemCart} = useContext(CartContext);
     
     useEffect(() => {
         async function getProducts() {
@@ -36,7 +35,7 @@ export function Home(){
                 backgroundColor: '#121212',
                 color: '#FFF'
             }
-        })
+        });
         addItemCart(product);
     }
 

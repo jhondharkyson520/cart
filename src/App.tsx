@@ -1,8 +1,8 @@
-import { Home } from './pages/home'
-import { Cart } from './pages/cart'
-import { createBrowserRouter } from 'react-router-dom'
-import { Layout } from './components/layout'
-import { ProductDetail } from './pages/detail'
+import {Home} from './pages/home';
+import {Cart} from './pages/cart';
+import {createBrowserRouter} from 'react-router-dom';
+import {Layout} from './components/layout';
+import {ProductDetail} from './pages/detail';
 
 const router = createBrowserRouter([
   {
@@ -24,4 +24,4 @@ const router = createBrowserRouter([
   }
 ])
 
-export { router };
+export {router};

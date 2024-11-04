@@ -1,20 +1,19 @@
-import { useState, useEffect, useContext} from 'react'
-import { useParams, useNavigate } from 'react-router-dom'
-import { api } from '../../services/api';
-import { ProductsProps } from '../home';
+import {useState, useEffect, useContext} from 'react';
+import {useParams, useNavigate} from 'react-router-dom';
+import {api} from '../../services/api';
+import {ProductsProps} from '../home';
 import {BsCartPlus} from 'react-icons/bs';
-import { CartContext } from '../../contexts/CartContext'
+import {CartContext} from '../../contexts/CartContext';
 import toast from 'react-hot-toast';
 
-export function ProductDetail(){
-
+export function ProductDetail() {
     const {id} = useParams();
     const [product, setProduct] = useState<ProductsProps>();
-    const { addItemCart } = useContext(CartContext);
+    const {addItemCart} = useContext(CartContext);
     const navigate = useNavigate();
 
     useEffect(() => {
-        async function getProduct(){
+        async function getProduct() {
             const response = await api.get(`/products/${id}`);
             setProduct(response.data);
         }
@@ -22,16 +21,15 @@ export function ProductDetail(){
         getProduct();
     }, [id]);
 
-    function handleAddItem(product: ProductsProps){
+    function handleAddItem(product: ProductsProps) {
         toast.success('Produto adicionado no carrinho', {
             style: {
                 borderRadius: 10,
                 backgroundColor: '#121212',
                 color: '#FFF'
             }
-        })
+        });
         addItemCart(product);
-
         navigate('/cart');
     }
 

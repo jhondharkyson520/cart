@@ -1,10 +1,9 @@
-import { useContext } from 'react'
-import { CartContext } from '../../contexts/CartContext'
-import { Link } from 'react-router-dom';
+import {useContext} from 'react';
+import {CartContext} from '../../contexts/CartContext';
+import {Link} from 'react-router-dom';
 
-export function Cart(){
-
-    const { cart, total, addItemCart, removeItemCart } =  useContext(CartContext);
+export function Cart() {
+    const {cart, total, addItemCart, removeItemCart} =  useContext(CartContext);
 
     return(
         <div className="w-full max-w-7xl mx-auto">

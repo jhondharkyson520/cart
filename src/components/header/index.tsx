@@ -1,11 +1,10 @@
-import { FiShoppingCart } from 'react-icons/fi'
-import { Link } from 'react-router-dom'
-import { useContext } from 'react'
-import { CartContext } from '../../contexts/CartContext'
+import {FiShoppingCart} from 'react-icons/fi';
+import {Link} from 'react-router-dom';
+import {useContext} from 'react';
+import {CartContext} from '../../contexts/CartContext';
 
-export function Header(){
-
-    const { cartAmount } = useContext(CartContext)
+export function Header() {
+    const {cartAmount} = useContext(CartContext);
 
     return(
         <header className='w-full px-1 bg-slate-200'>
