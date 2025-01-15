@@ -1,0 +1,13 @@
+FROM node:alpine AS build
+
+WORKDIR /usr/src/cart_api
+
+COPY package*.json ./
+
+RUN npm install -g json-server
+
+COPY . .
+
+CMD ["json-server", "--watch", "db.json", "--host", "0.0.0.0", "--port", "3001"]
+
+EXPOSE 3001
