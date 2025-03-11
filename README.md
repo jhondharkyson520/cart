@@ -1,54 +1,54 @@
 
-# 🛒 Cart - Carrinho de Compras
+#  Cart - Carrinho de Compras
 
-## 📝 Descrição
+##  Descrição
 
 Este projeto é um carrinho de compras desenvolvido com ReactJS, TypeScript e TailwindCSS. Ele permite aos usuários explorar e adicionar produtos ao carrinho, com um layout responsivo que oferece uma experiência de uso intuitiva em diferentes dispositivos.
 
-## 🚀 Funcionalidades
+##  Funcionalidades
 
-- **➕ Adicionar ao Carrinho**: Permite adicionar produtos ao carrinho de compras com apenas um clique.
+- ** Adicionar ao Carrinho**: Permite adicionar produtos ao carrinho de compras com apenas um clique.
 
-- **💰 Cálculo do Total**: O valor total da compra é atualizado dinamicamente de acordo com a quantidade e o preço dos produtos adicionados.
+- ** Cálculo do Total**: O valor total da compra é atualizado dinamicamente de acordo com a quantidade e o preço dos produtos adicionados.
 
-- **🔍 Detalhes do Produto**: Visualize informações detalhadas de cada produto individualmente.
+- ** Detalhes do Produto**: Visualize informações detalhadas de cada produto individualmente.
 
-- **📝 Lista de Produtos**: Exibe uma lista de produtos disponíveis para compra.
+- ** Lista de Produtos**: Exibe uma lista de produtos disponíveis para compra.
 
-- **📱 Design Responsivo**: A interface se adapta a diferentes tamanhos de tela para uma navegação eficiente em dispositivos móveis e desktops.
+- ** Design Responsivo**: A interface se adapta a diferentes tamanhos de tela para uma navegação eficiente em dispositivos móveis e desktops.
 
-## 🛠️ Tecnologias Utilizadas
+##  Tecnologias Utilizadas
 
 - **Frontend**:
-  - ⚛️ **ReactJS**: Biblioteca JavaScript para construção de interfaces de usuário dinâmicas e reativas.
+  -  **ReactJS**: Biblioteca JavaScript para construção de interfaces de usuário dinâmicas e reativas.
   
-  - 🔷 **TypeScript**: Superset de JavaScript com tipagem estática, proporcionando maior segurança e clareza no desenvolvimento.
+  -  **TypeScript**: Superset de JavaScript com tipagem estática, proporcionando maior segurança e clareza no desenvolvimento.
  
-  - 🌐 **TailwindCSS**: Framework de CSS utilitário para estilização, garantindo um design moderno e responsivo de forma rápida e eficiente.
+  -  **TailwindCSS**: Framework de CSS utilitário para estilização, garantindo um design moderno e responsivo de forma rápida e eficiente.
 
-## 🗂️ Estrutura do Projeto
+##  Estrutura do Projeto
 
 ### Pastas e Arquivos
 
-- 📂 **`src/components/`**: Componentes da aplicação.
+-  **`src/components/`**: Componentes da aplicação.
   - **Header**: Cabeçalho da aplicação, contendo o título e links de navegação.
   - **Layout**: Estrutura geral do layout da aplicação.
-- 📂 **`src/contexts/`**: Define contextos para compartilhamento de dados e estado entre componentes.
-- 📂 **`src/pages/`**: Páginas principais da aplicação.
+-  **`src/contexts/`**: Define contextos para compartilhamento de dados e estado entre componentes.
+-  **`src/pages/`**: Páginas principais da aplicação.
   - **Cart**:
     - `index.tsx`: Componente principal da página do carrinho de compras, mostrando os produtos adicionados e o valor total.
   - **Home**: Página inicial com uma lista dos produtos disponíveis.
     - `index.tsx`: Componente principal da página inicial.
   - **Detail**:
     - `index.tsx`: Página de detalhes de cada produto, exibindo informações específicas.
-- 📂 **`src/services`**:
+-  **`src/services`**:
   - `api.ts`: Arquivo responsável por gerenciar as requisições para a API ou para o `db.json`.
-- 📂 **`src/App.tsx`**: Componente raiz que define as rotas e organiza a estrutura básica da aplicação.
-- 📂 **`src/index.css`**: Arquivo de configurações globais do TailwindCSS.
-- 📂 **`src/main.tsx`**: Arquivo de entrada principal da aplicação.
-- 📄 **`db.json`**: Simula o banco de dados, fornecendo os dados dos produtos para a aplicação.
+-  **`src/App.tsx`**: Componente raiz que define as rotas e organiza a estrutura básica da aplicação.
+-  **`src/index.css`**: Arquivo de configurações globais do TailwindCSS.
+-  **`src/main.tsx`**: Arquivo de entrada principal da aplicação.
+-  **`db.json`**: Simula o banco de dados, fornecendo os dados dos produtos para a aplicação.
 
-## ⚙️ Instalação e Execução
+##  Instalação e Execução
 
 1. **Clone o repositório do projeto:**
    ```bash
@@ -80,6 +80,6 @@ Este projeto é um carrinho de compras desenvolvido com ReactJS, TypeScript e Ta
 
 ---
 
-### 📚 Notas sobre o Projeto
+###  Notas sobre o Projeto
 
 Este projeto utiliza o **JSON Server** para simular uma API com o arquivo `db.json` atuando como banco de dados. Isso permite acessar e manipular informações dos produtos em tempo real dentro da aplicação.
